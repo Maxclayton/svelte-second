@@ -1,7 +1,15 @@
 <script>
-	import { fade, draw } from 'svelte/transition';
+  import { onMount } from 'svelte';
+  import { fade, draw } from 'svelte/transition';
 
-	let visible = true;
+  let visible = false;
+
+  onMount(() => {
+    // Delay the transition by a certain amount of time (in milliseconds)
+    setTimeout(() => {
+      visible = true;
+    }, 1000); // Adjust the delay time as needed
+  });
 </script>
 <main>
 
