@@ -46,7 +46,7 @@
 
 <label>
 	<input type="checkbox" bind:checked={visible} />
-	toggle me
+	toggle
 </label>
 
 </main>
